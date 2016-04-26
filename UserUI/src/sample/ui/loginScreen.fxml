@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="sample.login.LoginController">
+    <columnConstraints>
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="301.0" minWidth="10.0" prefWidth="253.0" />
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="348.0" minWidth="10.0" prefWidth="347.0" />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="90.0" minHeight="10.0" prefHeight="71.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="129.0" minHeight="10.0" prefHeight="80.0" vgrow="SOMETIMES" />
+    </rowConstraints>
+    <children>
+        <Label text="WELCOME!" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.valignment="BOTTOM">
+            <font>
+                <Font name="Bernard MT Condensed" size="24.0" />
+            </font>
+        </Label>
+        <TextField fx:id="nameTextField" maxHeight="-Infinity" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="34.0" prefWidth="250.0" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
+            <GridPane.margin>
+                <Insets bottom="10.0" />
+            </GridPane.margin>
+        </TextField>
+        <PasswordField fx:id="passwordTextField" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="34.0" prefWidth="250.0" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="2" GridPane.valignment="TOP">
+            <GridPane.margin>
+                <Insets top="10.0" />
+            </GridPane.margin>
+        </PasswordField>
+        <Label alignment="CENTER" contentDisplay="TEXT_ONLY" prefHeight="34.0" prefWidth="91.0" text="Password" textAlignment="CENTER" GridPane.halignment="RIGHT" GridPane.rowIndex="2" GridPane.valignment="TOP">
+            <GridPane.margin>
+                <Insets top="10.0" />
+            </GridPane.margin>
+            <font>
+                <Font name="David" size="18.0" />
+            </font>
+        </Label>
+        <Label prefHeight="34.0" prefWidth="55.0" text="Name" GridPane.halignment="RIGHT" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
+            <font>
+                <Font name="David" size="18.0" />
+            </font>
+            <GridPane.margin>
+                <Insets bottom="10.0" />
+            </GridPane.margin>
+        </Label>
+        <Button mnemonicParsing="false" onAction="#handleLogin" text="Log In" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="3" GridPane.valignment="TOP">
+            <GridPane.margin>
+                <Insets left="10.0" top="-20.0" />
+            </GridPane.margin>
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Button>
+        <Hyperlink onAction="#onRegister" text="or register now" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="3" GridPane.valignment="TOP">
+            <GridPane.margin>
+                <Insets top="15.0" />
+            </GridPane.margin>
+        </Hyperlink>
+        <ProgressIndicator fx:id="indicator" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="30.0" prefWidth="30.0" visible="false" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="3" GridPane.valignment="TOP">
+            <GridPane.margin>
+                <Insets left="80.0" top="-20.0" />
+            </GridPane.margin>
+        </ProgressIndicator>
+        <Label fx:id="errorLabel" textFill="RED" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="3" GridPane.valignment="BOTTOM">
+            <font>
+                <Font name="Bell MT" size="14.0" />
+            </font>
+            <GridPane.margin>
+                <Insets bottom="50.0" />
+            </GridPane.margin>
+        </Label>
+    </children>
+</GridPane>

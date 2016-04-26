@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<SplitPane dividerPositions="0.5" maxHeight="600.0" maxWidth="800.0" minHeight="600.0" minWidth="800.0" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.user.UserController">
+  <items>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+         <children>
+            <Label alignment="CENTER" layoutY="-1.0" prefHeight="37.0" prefWidth="296.0" text="Resources">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Label>
+            <Separator layoutY="38.0" prefHeight="1.0" prefWidth="296.0" />
+            <ComboBox fx:id="resourcesComboBox" layoutX="132.0" layoutY="73.0" onAction="#resourceSelected" prefWidth="150.0" />
+            <Label fx:id="selectResourceLabel" layoutX="14.0" layoutY="73.0" text="Select resource">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <TextArea fx:id="resourceContentTextView" layoutX="14.0" layoutY="121.0" prefHeight="195.0" prefWidth="270.0" />
+            <Button fx:id="changeResourceButton" layoutX="230.0" layoutY="330.0" mnemonicParsing="false" onAction="#changeResourceTapped" text="Change" />
+            <ProgressIndicator fx:id="changeResourceIndicator" layoutX="200.0" layoutY="332.0" prefHeight="20.0" prefWidth="20.0" />
+            <Label fx:id="changeResourceResultLabel" alignment="CENTER_RIGHT" layoutX="12.0" layoutY="376.0" prefHeight="17.0" prefWidth="270.0" AnchorPane.bottomAnchor="8.0">
+               <font>
+                  <Font size="12.0" />
+               </font>
+            </Label>
+            <Button layoutX="12.0" layoutY="6.0" mnemonicParsing="false" onAction="#logout" text="Logout" />
+         </children></AnchorPane>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+         <children>
+            <Separator layoutY="38.0" prefHeight="1.0" prefWidth="296.0" />
+            <Label alignment="CENTER" prefHeight="37.0" prefWidth="296.0" text="Permissions">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Label>
+            <TableView fx:id="permissionsTableView" layoutX="48.0" layoutY="99.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="99.0" AnchorPane.leftAnchor="48.0" AnchorPane.rightAnchor="48.0" AnchorPane.topAnchor="99.0">
+              <columns>
+                <TableColumn fx:id="resourceColumn" prefWidth="95.0" text="Resource" />
+                <TableColumn fx:id="permissionsColumn" prefWidth="95.0" text="Permissions" />
+              </columns>
+            </TableView>
+            <Button layoutX="241.0" layoutY="7.0" mnemonicParsing="false" onAction="#reloadPermissions" text="Reload" />
+         </children></AnchorPane>
+  </items>
+</SplitPane>

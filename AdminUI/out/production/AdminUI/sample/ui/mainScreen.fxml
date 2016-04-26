@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<SplitPane dividerPositions="0.29797979797979796" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.admin.AdminController">
+  <items>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+      <children>
+        <ListView fx:id="listView" prefHeight="398.0" prefWidth="175.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      </children></AnchorPane>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+      <children>
+        <Label fx:id="nameLabel" alignment="CENTER_RIGHT" layoutX="67.0" layoutY="35.0" text="Old Name" AnchorPane.rightAnchor="310.0" AnchorPane.topAnchor="65.0">
+          <font>
+            <Font size="14.0" />
+          </font>
+        </Label>
+        <TextField fx:id="nameTextField" layoutX="121.0" layoutY="28.0" prefHeight="30.0" prefWidth="175.0" AnchorPane.topAnchor="60.0">
+          <font>
+            <Font size="14.0" />
+          </font>
+        </TextField>
+        <TextField fx:id="passwordTextField" layoutX="121.0" layoutY="79.0" prefHeight="30.0" prefWidth="175.0" AnchorPane.topAnchor="105.0">
+          <font>
+            <Font size="14.0" />
+          </font>
+        </TextField>
+        <Label fx:id="passwordLabel" alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="16.0" layoutY="110.0" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="95.0" text="New Name" AnchorPane.topAnchor="110.0">
+          <font>
+            <Font size="14.0" />
+          </font>
+        </Label>
+        <ComboBox fx:id="comboBox" layoutX="121.0" layoutY="147.0" prefWidth="175.0" visibleRowCount="2" AnchorPane.topAnchor="150.0" />
+        <Label fx:id="userTypeLabel" alignment="CENTER_RIGHT" layoutX="16.0" layoutY="155.0" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="95.0" text="New 123" textAlignment="RIGHT" AnchorPane.topAnchor="155.0">
+          <font>
+            <Font size="14.0" />
+          </font>
+        </Label>
+        <ProgressIndicator fx:id="responseIndicator" layoutX="393.0" layoutY="374.0" prefHeight="20.0" prefWidth="20.0" AnchorPane.bottomAnchor="8.0" AnchorPane.rightAnchor="8.0" />
+        <ImageView fx:id="responseImageView" fitHeight="20.0" fitWidth="20.0" layoutX="393.0" layoutY="374.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="8.0" AnchorPane.rightAnchor="8.0" />
+        <Button layoutY="372.0" mnemonicParsing="false" onAction="#doAction" prefHeight="24.0" prefWidth="37.0" text="Do" AnchorPane.bottomAnchor="8.0" AnchorPane.leftAnchor="8.0" />
+        <Label fx:id="errorLabel" alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="55.0" layoutY="368.0" prefHeight="24.0" prefWidth="327.0" textAlignment="CENTER" textFill="RED" wrapText="true" AnchorPane.bottomAnchor="8.0">
+          <font>
+            <Font size="10.0" />
+          </font>
+        </Label>
+        <Button layoutX="364.0" layoutY="2.0" mnemonicParsing="false" onAction="#onLogout" text="Logout" AnchorPane.rightAnchor="8.0" AnchorPane.topAnchor="8.0" />
+        <Label fx:id="titleLabel" alignment="CENTER" layoutX="68.0" layoutY="8.0" prefHeight="27.0" prefWidth="281.0" textAlignment="CENTER" AnchorPane.leftAnchor="68.0" AnchorPane.rightAnchor="68.0" AnchorPane.topAnchor="8.0">
+          <font>
+            <Font name="System Bold" size="18.0" />
+          </font>
+        </Label>
+        <Separator layoutX="-1.0" layoutY="31.0" prefHeight="12.0" prefWidth="417.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="36.0" />
+        <TextField fx:id="thirdTextInputField" layoutX="121.0" layoutY="150.0" prefHeight="30.0" prefWidth="175.0" AnchorPane.topAnchor="150.0" />
+        <ComboBox fx:id="secondComboBox" layoutX="121.0" layoutY="187.0" prefHeight="24.0" prefWidth="175.0" AnchorPane.topAnchor="195.0" />
+        <Label fx:id="fourthLabel" alignment="CENTER_RIGHT" layoutX="21.0" layoutY="197.0" prefHeight="20.0" prefWidth="93.0" text="User Type" AnchorPane.leftAnchor="16.0" AnchorPane.topAnchor="197.0">
+          <font>
+            <Font size="14.0" />
+          </font>
+        </Label>
+        <ComboBox fx:id="selectUserComboBox" layoutX="121.0" layoutY="63.0" prefHeight="24.0" prefWidth="175.0" AnchorPane.topAnchor="63.0" />
+        <ProgressIndicator fx:id="requestUsersIndicator" layoutX="305.0" layoutY="65.0" prefHeight="20.0" prefWidth="20.0" AnchorPane.leftAnchor="308.0" />
+        <ComboBox fx:id="getAllRolesComboBox" layoutX="121.0" layoutY="108.0" prefHeight="24.0" prefWidth="175.0" />
+        <ProgressIndicator fx:id="getAllRolesIndicator" layoutX="308.0" layoutY="110.0" prefHeight="20.0" prefWidth="20.0" AnchorPane.leftAnchor="308.0" />
+        <TableView fx:id="tableView" layoutX="49.0" layoutY="107.0" prefHeight="200.0" prefWidth="340.0" AnchorPane.topAnchor="107.0">
+          <columns>
+            <TableColumn fx:id="userColumnTableView" prefWidth="108.0" text="User" />
+            <TableColumn fx:id="resourceColumnTableView" prefWidth="110.0" text="Resource" />
+            <TableColumn fx:id="permissionsColumnTableView" prefWidth="108.0" text="Permissions" />
+          </columns>
+        </TableView>
+        <CheckBox fx:id="readCheckBox" layoutX="121.0" layoutY="150.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="69.0" text="READ" AnchorPane.leftAnchor="121.0" />
+        <CheckBox fx:id="writeCheckBox" layoutX="198.0" layoutY="150.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="69.0" text="WRITE" AnchorPane.leftAnchor="198.0" />
+      </children></AnchorPane>
+  </items>
+</SplitPane>

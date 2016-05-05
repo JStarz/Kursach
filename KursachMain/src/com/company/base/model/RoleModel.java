@@ -54,6 +54,13 @@ public class RoleModel {
         if (!userRoles.contains(role)) userRoles.add(role);
     }
 
+    public List<String> getResourcePath(Resource resource) {
+        for (Role role : userRoles)
+            if (role.isResourceGranted(resource))
+                return resource.getResourcePath();
+        return null;
+    }
+
     public Resource getResource(Resource resource, Permission perm) {
         for (Role role : userRoles)
             if (role.isResourceGranted(resource, perm))

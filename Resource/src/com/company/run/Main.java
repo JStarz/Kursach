@@ -11,9 +11,13 @@ import java.util.concurrent.ConcurrentHashMap;
 
 public class Main {
 
+    private static ConcurrentHashMap<String, String> resources;
+    private static ConcurrentHashMap<String, String> path = new ConcurrentHashMap<>();
+    private static ConcurrentHashMap<String, String> names = new ConcurrentHashMap<>();
+
     public static void main(String[] args) throws Exception {
         final ServerSocket resourceServer = new ServerSocket(9002);
-        ConcurrentHashMap<String, String> resources = createResourceMap();
+        resources = createResourceMap();
 
         if (resources != null) {
             System.out.println("READY TO LISTEN RESOURCE REQUESTS");
@@ -47,6 +51,14 @@ public class Main {
                                 resources.replace(resourceKey, resourceValue);
                                 updateDBWithNewResourceValue(resourceKey, resourceValue);
                             }
+                            if (request.getTypeValue().equals(JSONConstants.GetResourcePath)) {
+                                final String resource = request.getValueForKey(JSONConstants.Resource);
+                                final String resourcePath = path.get(resource);
+                                final String resourceName = names.get(resource);
+
+                                outStream.println(resourcePath);
+                                outStream.println(resourceName);
+                            }
                         } catch (Exception e) {
                             e.printStackTrace();
                         } finally {
@@ -73,6 +85,7 @@ public class Main {
     private static ConcurrentHashMap<String, String> createResourceMap() {
 
         Connection connection;
+        String baseDir = "D:\\Other\\Kursovaya\\Resources\\";
 
         try {
 
@@ -101,7 +114,10 @@ public class Main {
 
                 while(rs.next()) {
                     final String resourceKey = rs.getString(1);
-                    final String resourceValue = rs.getString(2);
+                    final String resourceName = rs.getString(2);
+                    final String resourcePath = rs.getString(3);
+
+                    final String resourceValue = baseDir + resourcePath + resourceName;
 
                     try (BufferedReader br = new BufferedReader(new FileReader(new File(resourceValue)))) {
                         StringBuilder sb = new StringBuilder();
@@ -115,6 +131,9 @@ public class Main {
 
                         map.put(resourceKey, sb.toString());
                     }
+
+                    path.put(resourceKey, resourcePath);
+                    names.put(resourceKey, resourceName);
                 }
 
                 connection.close();

@@ -107,5 +107,11 @@ public class JSONConstants {
 
     public static final String GetAssociativeRoles = "GetAssociativeRoles";
     public static final String GetAssociativeRolesResult = "GetAssociativeRolesResult";
+
+    public static final String GetResourcePath = "PathForResource";
+    public static final String GetResourcePathResult = "PathForResourceResult";
+
+    public static final String StartDownload = "StartDownload";
+    public static final String StartDownloadResult = "StartDownloadResult";
 }
 

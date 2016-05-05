@@ -9,43 +9,39 @@
   <items>
     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
          <children>
-            <Label alignment="CENTER" layoutY="-1.0" prefHeight="37.0" prefWidth="296.0" text="Resources">
+            <Label alignment="CENTER" layoutY="-1.0" prefHeight="37.0" prefWidth="376.0" text="Resources" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="0.0">
                <font>
                   <Font size="21.0" />
                </font>
             </Label>
-            <Separator layoutY="38.0" prefHeight="1.0" prefWidth="296.0" />
-            <ComboBox fx:id="resourcesComboBox" layoutX="132.0" layoutY="73.0" onAction="#resourceSelected" prefWidth="150.0" />
-            <Label fx:id="selectResourceLabel" layoutX="14.0" layoutY="73.0" text="Select resource">
-               <font>
-                  <Font size="16.0" />
-               </font>
-            </Label>
-            <TextArea fx:id="resourceContentTextView" layoutX="14.0" layoutY="121.0" prefHeight="195.0" prefWidth="270.0" />
-            <Button fx:id="changeResourceButton" layoutX="230.0" layoutY="330.0" mnemonicParsing="false" onAction="#changeResourceTapped" text="Change" />
-            <ProgressIndicator fx:id="changeResourceIndicator" layoutX="200.0" layoutY="332.0" prefHeight="20.0" prefWidth="20.0" />
-            <Label fx:id="changeResourceResultLabel" alignment="CENTER_RIGHT" layoutX="12.0" layoutY="376.0" prefHeight="17.0" prefWidth="270.0" AnchorPane.bottomAnchor="8.0">
+            <Separator layoutY="38.0" prefHeight="1.0" prefWidth="296.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="38.0" />
+            <Button layoutX="12.0" layoutY="6.0" mnemonicParsing="false" onAction="#logout" text="Logout" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="6.0" />
+            <StackPane fx:id="stackPane" layoutX="98.0" layoutY="40.0" prefHeight="150.0" prefWidth="200.0" AnchorPane.bottomAnchor="48.0" AnchorPane.leftAnchor="48.0" AnchorPane.rightAnchor="48.0" AnchorPane.topAnchor="78.0">
+               <children>
+                  <TreeView fx:id="treeView" prefHeight="200.0" prefWidth="200.0" showRoot="false" />
+               </children>
+            </StackPane>
+            <Button fx:id="downloadButton" disable="true" layoutX="299.0" layoutY="560.0" mnemonicParsing="false" onAction="#downloadButton" text="Download" AnchorPane.bottomAnchor="14.0" AnchorPane.rightAnchor="48.0">
                <font>
                   <Font size="12.0" />
                </font>
-            </Label>
-            <Button layoutX="12.0" layoutY="6.0" mnemonicParsing="false" onAction="#logout" text="Logout" />
+            </Button>
          </children></AnchorPane>
     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
          <children>
-            <Separator layoutY="38.0" prefHeight="1.0" prefWidth="296.0" />
-            <Label alignment="CENTER" prefHeight="37.0" prefWidth="296.0" text="Permissions">
+            <Separator layoutY="38.0" prefHeight="1.0" prefWidth="296.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="38.0" />
+            <Label alignment="CENTER" prefHeight="37.0" prefWidth="296.0" text="Permissions" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="0.0">
                <font>
                   <Font size="21.0" />
                </font>
             </Label>
-            <TableView fx:id="permissionsTableView" layoutX="48.0" layoutY="99.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="99.0" AnchorPane.leftAnchor="48.0" AnchorPane.rightAnchor="48.0" AnchorPane.topAnchor="99.0">
+            <TableView fx:id="permissionsTableView" layoutX="48.0" layoutY="99.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="48.0" AnchorPane.leftAnchor="48.0" AnchorPane.rightAnchor="48.0" AnchorPane.topAnchor="78.0">
               <columns>
-                <TableColumn fx:id="resourceColumn" prefWidth="95.0" text="Resource" />
-                <TableColumn fx:id="permissionsColumn" prefWidth="95.0" text="Permissions" />
+                <TableColumn fx:id="resourceColumn" prefWidth="143.0" text="Resource" />
+                <TableColumn fx:id="permissionsColumn" prefWidth="131.0" text="Permissions" />
               </columns>
             </TableView>
-            <Button layoutX="241.0" layoutY="7.0" mnemonicParsing="false" onAction="#reloadPermissions" text="Reload" />
+            <Button layoutX="241.0" layoutY="7.0" mnemonicParsing="false" onAction="#reloadPermissions" text="Reload" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="6.0" />
          </children></AnchorPane>
   </items>
 </SplitPane>

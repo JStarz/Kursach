@@ -26,7 +26,7 @@
         <entry file="file://$PROJECT_DIR$/src/com/company/core/Server.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="31" column="52" selection-start-line="31" selection-start-column="52" selection-end-line="31" selection-end-column="52" />
+              <caret line="155" column="39" selection-start-line="155" selection-start-column="39" selection-end-line="155" selection-end-column="39" />
               <folding>
                 <element signature="method#wrongCredentials#0;class#Server#0" expanded="false" />
               </folding>
@@ -34,79 +34,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/company/run/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.33746898">
-              <caret line="9" column="15" selection-start-line="9" selection-start-column="15" selection-end-line="9" selection-end-column="15" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="JSONConstants.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/company/json/JSONConstants.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="107" column="50" selection-start-line="107" selection-start-column="31" selection-end-line="107" selection-end-column="50" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DatabaseUtils.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/company/dao/DatabaseUtils.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="1019" column="0" selection-start-line="1019" selection-start-column="0" selection-end-line="1019" selection-end-column="0" />
-              <folding>
-                <element signature="method#prepare#0;class#DatabaseUtils#0" expanded="false" />
-                <element signature="method#close#0;class#DatabaseUtils#0" expanded="false" />
-                <element signature="method#finallyBlock#0;class#DatabaseUtils#0" expanded="false" />
-                <element signature="method#readClientRoles#0;class#DatabaseUtils#0" expanded="false" />
-                <element signature="method#readClientRoles#1;class#DatabaseUtils#0" expanded="false" />
-                <element signature="method#addUser#0;class#DatabaseUtils#0" expanded="false" />
-                <element signature="method#deleteUser#0;class#DatabaseUtils#0" expanded="false" />
-                <element signature="method#updateUser#0;class#DatabaseUtils#0" expanded="false" />
-                <element signature="method#getUsers#0;class#DatabaseUtils#0" expanded="false" />
-                <element signature="method#isAdmin#0;class#DatabaseUtils#0" expanded="false" />
-                <element signature="method#getRolePermsAndResource#0;class#DatabaseUtils#0" expanded="false" />
-                <element signature="method#createRole#0;class#DatabaseUtils#0" expanded="false" />
-                <element signature="method#deleteRole#0;class#DatabaseUtils#0" expanded="false" />
-                <element signature="method#associateRoleWithUser#0;class#DatabaseUtils#0" expanded="false" />
-                <element signature="method#getUserWithRole#0;class#DatabaseUtils#0" expanded="false" />
-                <element signature="method#getRoles#0;class#DatabaseUtils#0" expanded="false" />
-                <element signature="method#roleExists#0;class#DatabaseUtils#0" expanded="false" />
-                <element signature="method#userExists#0;class#DatabaseUtils#0" expanded="false" />
-                <element signature="method#getPreparedRoleName#0;class#DatabaseUtils#0" expanded="false" />
-                <element signature="method#getRemovedRoleName#0;class#DatabaseUtils#0" expanded="false" />
-                <element signature="method#prepareDriver#0;class#DatabaseUtils#0" expanded="false" />
-                <element signature="method#prepareConnection#0;class#DatabaseUtils#0" expanded="false" />
-                <element signature="method#deleteUserRole#0;class#DatabaseUtils#0" expanded="false" />
-                <element signature="method#deleteUserRoles#0;class#DatabaseUtils#0" expanded="false" />
-                <element signature="method#changeRoleName#0;class#DatabaseUtils#0" expanded="false" />
-                <element signature="method#addPermissionsToRole#0;class#DatabaseUtils#0" expanded="false" />
-                <element signature="method#getPermsFromString#0;class#DatabaseUtils#0" expanded="false" />
-                <element signature="method#createStringFromPermsList#0;class#DatabaseUtils#0" expanded="false" />
-                <element signature="method#deletePermissionsFromRole#0;class#DatabaseUtils#0" expanded="false" />
-                <element signature="method#deleteAllPermissionsFromRole#0;class#DatabaseUtils#0" expanded="false" />
-                <element signature="method#changeResursFromRole#0;class#DatabaseUtils#0" expanded="false" />
-                <element signature="method#associateRoleWithRole#0;class#DatabaseUtils#0" expanded="false" />
-                <element signature="method#deleteAssociatedRole#0;class#DatabaseUtils#0" expanded="false" />
-                <element signature="method#deleteAllAssociatedRoles#0;class#DatabaseUtils#0" expanded="false" />
-                <element signature="method#getAllResources#0;class#DatabaseUtils#0" expanded="false" />
-                <element signature="method#getDistinctRolesForUser#0;class#DatabaseUtils#0" expanded="false" />
-                <element signature="method#managePermissions#0;class#DatabaseUtils#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Client.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Client.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/company/core/Client.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="373" column="0" selection-start-line="373" selection-start-column="0" selection-end-line="373" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.7890819">
+              <caret line="394" column="62" selection-start-line="394" selection-start-column="62" selection-end-line="394" selection-end-column="62" />
               <folding>
                 <element signature="method#Client#0;class#Client#0" expanded="false" />
                 <element signature="method#close#0;class#Client#0" expanded="false" />
@@ -121,14 +53,12 @@
         <entry file="file://$PROJECT_DIR$/src/com/company/base/iam/Role.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="210" column="16" selection-start-line="210" selection-start-column="16" selection-end-line="210" selection-end-column="16" />
+              <caret line="146" column="21" selection-start-line="146" selection-start-column="21" selection-end-line="146" selection-end-column="21" />
               <folding>
                 <element signature="method#equals#0;class#Role#0" expanded="false" />
                 <element signature="method#readAssociativeRolePerms#0;class#Role#0" expanded="false" />
                 <element signature="method#updatePermissionListForResource#0;class#Role#0" expanded="false" />
                 <element signature="method#getEqualResource#0;class#Role#0" expanded="false" />
-                <element signature="method#isResourceGranted#0;class#Role#0" expanded="false" />
-                <element signature="method#getResourcePermission#0;class#Role#0" expanded="false" />
                 <element signature="method#addPerms#0;class#Role#0" expanded="false" />
                 <element signature="method#removePerms#0;class#Role#0" expanded="false" />
                 <element signature="method#removeAllPerms#0;class#Role#0" expanded="false" />
@@ -142,8 +72,14 @@
         <entry file="file://$PROJECT_DIR$/src/com/company/base/model/AuthorizationModel.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="265" column="32" selection-start-line="265" selection-start-column="32" selection-end-line="265" selection-end-column="32" />
+              <caret line="45" column="74" selection-start-line="45" selection-start-column="74" selection-end-line="45" selection-end-column="74" />
               <folding>
+                <element signature="e#1160#1161#0" expanded="true" />
+                <element signature="e#1228#1229#0" expanded="true" />
+                <element signature="e#1272#1273#0" expanded="true" />
+                <element signature="e#1317#1318#0" expanded="true" />
+                <element signature="e#1368#1369#0" expanded="true" />
+                <element signature="e#1450#1451#0" expanded="true" />
                 <element signature="method#getUsersPermissions#0;class#AuthorizationModel#0" expanded="false" />
               </folding>
             </state>
@@ -154,9 +90,22 @@
         <entry file="file://$PROJECT_DIR$/src/com/company/base/model/RoleModel.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="110" column="56" selection-start-line="110" selection-start-column="56" selection-end-line="110" selection-end-column="56" />
+              <caret line="56" column="23" selection-start-line="56" selection-start-column="23" selection-end-line="56" selection-end-column="23" />
               <folding>
                 <element signature="method#getRoleForName#0;class#RoleModel#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Resource.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/company/base/iam/Resource.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+              <folding>
+                <element signature="e#3989#3990#0" expanded="true" />
+                <element signature="e#4031#4032#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -198,17 +147,17 @@
         <option value="$PROJECT_DIR$/src/com/company/run/Main.java" />
         <option value="$PROJECT_DIR$/src/com/company/base/iam/Permission.java" />
         <option value="$PROJECT_DIR$/src/com/company/json/JSON.java" />
-        <option value="$PROJECT_DIR$/src/com/company/base/iam/Resource.java" />
         <option value="$PROJECT_DIR$/src/com/company/base/exceptions/UserNotAdminException.java" />
         <option value="$PROJECT_DIR$/src/com/company/kerberos/KerberosConnection.java" />
         <option value="$PROJECT_DIR$/src/com/company/base/model/ClientModel.java" />
-        <option value="$PROJECT_DIR$/src/com/company/base/model/RoleModel.java" />
+        <option value="$PROJECT_DIR$/src/com/company/dao/DatabaseUtils.java" />
         <option value="$PROJECT_DIR$/src/com/company/base/iam/Role.java" />
+        <option value="$PROJECT_DIR$/src/com/company/base/iam/Resource.java" />
+        <option value="$PROJECT_DIR$/src/com/company/base/model/RoleModel.java" />
         <option value="$PROJECT_DIR$/src/com/company/json/JSONConstants.java" />
+        <option value="$PROJECT_DIR$/src/com/company/core/Server.java" />
         <option value="$PROJECT_DIR$/src/com/company/base/model/AuthorizationModel.java" />
         <option value="$PROJECT_DIR$/src/com/company/core/Client.java" />
-        <option value="$PROJECT_DIR$/src/com/company/dao/DatabaseUtils.java" />
-        <option value="$PROJECT_DIR$/src/com/company/core/Server.java" />
       </list>
     </option>
   </component>
@@ -852,21 +801,20 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/company/core/Server.java</url>
-          <line>524</line>
+          <line>538</line>
           <properties />
           <option name="timeStamp" value="61" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/company/base/model/RoleModel.java</url>
+          <line>57</line>
+          <properties />
+          <option name="timeStamp" value="78" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="77" />
+      <option name="time" value="79" />
     </breakpoint-manager>
-    <watches-manager>
-      <configuration name="Application">
-        <watch expression="roleExists(roleName)" language="JAVA" custom="" />
-        <watch expression="DatabaseUtils.readClientRoles(client)" language="JAVA" custom="" />
-        <watch expression="oldAssociativeField + &quot;|&quot; + associativeRole" language="JAVA" custom="" />
-        <watch expression="roleExists(role) &amp;&amp; userExists(user)" language="JAVA" custom="" />
-      </configuration>
-    </watches-manager>
+    <watches-manager />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -895,7 +843,6 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="601" column="85" selection-start-line="601" selection-start-column="85" selection-end-line="601" selection-end-column="85" />
           <folding>
-            <element signature="method#prepare#0;class#DatabaseUtils#0" expanded="false" />
             <element signature="method#close#0;class#DatabaseUtils#0" expanded="false" />
             <element signature="method#finallyBlock#0;class#DatabaseUtils#0" expanded="false" />
             <element signature="method#readClientRoles#0;class#DatabaseUtils#0" expanded="false" />
@@ -916,7 +863,6 @@
             <element signature="method#getPreparedRoleName#0;class#DatabaseUtils#0" expanded="false" />
             <element signature="method#getRemovedRoleName#0;class#DatabaseUtils#0" expanded="false" />
             <element signature="method#prepareDriver#0;class#DatabaseUtils#0" expanded="false" />
-            <element signature="method#prepareConnection#0;class#DatabaseUtils#0" expanded="false" />
             <element signature="method#deleteUserRole#0;class#DatabaseUtils#0" expanded="false" />
             <element signature="method#deleteUserRoles#0;class#DatabaseUtils#0" expanded="false" />
             <element signature="method#changeRoleName#0;class#DatabaseUtils#0" expanded="false" />
@@ -964,6 +910,12 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="140" column="25" selection-start-line="140" selection-start-column="25" selection-end-line="140" selection-end-column="25" />
           <folding>
+            <element signature="e#1160#1161#0" expanded="true" />
+            <element signature="e#1228#1229#0" expanded="true" />
+            <element signature="e#1272#1273#0" expanded="true" />
+            <element signature="e#1317#1318#0" expanded="true" />
+            <element signature="e#1368#1369#0" expanded="true" />
+            <element signature="e#1450#1451#0" expanded="true" />
             <element signature="method#getUsersPermissions#0;class#AuthorizationModel#0" expanded="false" />
           </folding>
         </state>
@@ -978,8 +930,6 @@
             <element signature="method#readAssociativeRolePerms#0;class#Role#0" expanded="false" />
             <element signature="method#updatePermissionListForResource#0;class#Role#0" expanded="false" />
             <element signature="method#getEqualResource#0;class#Role#0" expanded="false" />
-            <element signature="method#isResourceGranted#0;class#Role#0" expanded="false" />
-            <element signature="method#getResourcePermission#0;class#Role#0" expanded="false" />
             <element signature="method#addPerms#0;class#Role#0" expanded="false" />
             <element signature="method#removePerms#0;class#Role#0" expanded="false" />
             <element signature="method#removeAllPerms#0;class#Role#0" expanded="false" />
@@ -1037,6 +987,12 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="13" column="24" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
           <folding>
+            <element signature="e#1160#1161#0" expanded="true" />
+            <element signature="e#1228#1229#0" expanded="true" />
+            <element signature="e#1272#1273#0" expanded="true" />
+            <element signature="e#1317#1318#0" expanded="true" />
+            <element signature="e#1368#1369#0" expanded="true" />
+            <element signature="e#1450#1451#0" expanded="true" />
             <element signature="method#getUsersPermissions#0;class#AuthorizationModel#0" expanded="false" />
           </folding>
         </state>
@@ -1061,8 +1017,6 @@
             <element signature="method#readAssociativeRolePerms#0;class#Role#0" expanded="false" />
             <element signature="method#updatePermissionListForResource#0;class#Role#0" expanded="false" />
             <element signature="method#getEqualResource#0;class#Role#0" expanded="false" />
-            <element signature="method#isResourceGranted#0;class#Role#0" expanded="false" />
-            <element signature="method#getResourcePermission#0;class#Role#0" expanded="false" />
             <element signature="method#addPerms#0;class#Role#0" expanded="false" />
             <element signature="method#removePerms#0;class#Role#0" expanded="false" />
             <element signature="method#removeAllPerms#0;class#Role#0" expanded="false" />
@@ -1093,6 +1047,12 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
+            <element signature="e#1160#1161#0" expanded="true" />
+            <element signature="e#1228#1229#0" expanded="true" />
+            <element signature="e#1272#1273#0" expanded="true" />
+            <element signature="e#1317#1318#0" expanded="true" />
+            <element signature="e#1368#1369#0" expanded="true" />
+            <element signature="e#1450#1451#0" expanded="true" />
             <element signature="method#getUsersPermissions#0;class#AuthorizationModel#0" expanded="false" />
           </folding>
         </state>
@@ -1246,13 +1206,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/base/iam/Resource.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="50" column="19" selection-start-line="50" selection-start-column="19" selection-end-line="50" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_31/src.zip!/java/lang/String.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.3327869">
@@ -1281,72 +1234,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/base/model/RoleModel.java">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_31/src.zip!/java/net/ServerSocket.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="110" column="56" selection-start-line="110" selection-start-column="56" selection-end-line="110" selection-end-column="56" />
-          <folding>
-            <element signature="method#getRoleForName#0;class#RoleModel#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/base/iam/Role.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="210" column="16" selection-start-line="210" selection-start-column="16" selection-end-line="210" selection-end-column="16" />
-          <folding>
-            <element signature="method#equals#0;class#Role#0" expanded="false" />
-            <element signature="method#readAssociativeRolePerms#0;class#Role#0" expanded="false" />
-            <element signature="method#updatePermissionListForResource#0;class#Role#0" expanded="false" />
-            <element signature="method#getEqualResource#0;class#Role#0" expanded="false" />
-            <element signature="method#isResourceGranted#0;class#Role#0" expanded="false" />
-            <element signature="method#getResourcePermission#0;class#Role#0" expanded="false" />
-            <element signature="method#addPerms#0;class#Role#0" expanded="false" />
-            <element signature="method#removePerms#0;class#Role#0" expanded="false" />
-            <element signature="method#removeAllPerms#0;class#Role#0" expanded="false" />
-            <element signature="method#updatePermissions#0;class#Role#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/json/JSONConstants.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="107" column="50" selection-start-line="107" selection-start-column="31" selection-end-line="107" selection-end-column="50" />
+        <state vertical-scroll-proportion="0.3325062">
+          <caret line="126" column="11" selection-start-line="126" selection-start-column="11" selection-end-line="126" selection-end-column="11" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/base/model/AuthorizationModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="265" column="32" selection-start-line="265" selection-start-column="32" selection-end-line="265" selection-end-column="32" />
-          <folding>
-            <element signature="method#getUsersPermissions#0;class#AuthorizationModel#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/core/Client.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="373" column="0" selection-start-line="373" selection-start-column="0" selection-end-line="373" selection-end-column="0" />
-          <folding>
-            <element signature="method#Client#0;class#Client#0" expanded="false" />
-            <element signature="method#close#0;class#Client#0" expanded="false" />
-            <element signature="method#parseModelFromString#0;class#Client#0" expanded="false" />
-            <element signature="method#saidBadToken#0;class#Client#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/dao/DatabaseUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="1019" column="0" selection-start-line="1019" selection-start-column="0" selection-end-line="1019" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.3325062">
+          <caret line="494" column="24" selection-start-line="494" selection-start-column="24" selection-end-line="494" selection-end-column="24" />
           <folding>
-            <element signature="method#prepare#0;class#DatabaseUtils#0" expanded="false" />
             <element signature="method#close#0;class#DatabaseUtils#0" expanded="false" />
             <element signature="method#finallyBlock#0;class#DatabaseUtils#0" expanded="false" />
             <element signature="method#readClientRoles#0;class#DatabaseUtils#0" expanded="false" />
@@ -1367,7 +1267,6 @@
             <element signature="method#getPreparedRoleName#0;class#DatabaseUtils#0" expanded="false" />
             <element signature="method#getRemovedRoleName#0;class#DatabaseUtils#0" expanded="false" />
             <element signature="method#prepareDriver#0;class#DatabaseUtils#0" expanded="false" />
-            <element signature="method#prepareConnection#0;class#DatabaseUtils#0" expanded="false" />
             <element signature="method#deleteUserRole#0;class#DatabaseUtils#0" expanded="false" />
             <element signature="method#deleteUserRoles#0;class#DatabaseUtils#0" expanded="false" />
             <element signature="method#changeRoleName#0;class#DatabaseUtils#0" expanded="false" />
@@ -1387,29 +1286,96 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_31/src.zip!/java/net/ServerSocket.java">
+    <entry file="file://$PROJECT_DIR$/src/com/company/run/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3325062">
-          <caret line="126" column="11" selection-start-line="126" selection-start-column="11" selection-end-line="126" selection-end-column="11" />
+        <state vertical-scroll-proportion="0.33746898">
+          <caret line="9" column="15" selection-start-line="9" selection-start-column="15" selection-end-line="9" selection-end-column="15" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/base/model/RoleModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="56" column="23" selection-start-line="56" selection-start-column="23" selection-end-line="56" selection-end-column="23" />
+          <folding>
+            <element signature="method#getRoleForName#0;class#RoleModel#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/base/iam/Role.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="146" column="21" selection-start-line="146" selection-start-column="21" selection-end-line="146" selection-end-column="21" />
+          <folding>
+            <element signature="method#equals#0;class#Role#0" expanded="false" />
+            <element signature="method#readAssociativeRolePerms#0;class#Role#0" expanded="false" />
+            <element signature="method#updatePermissionListForResource#0;class#Role#0" expanded="false" />
+            <element signature="method#getEqualResource#0;class#Role#0" expanded="false" />
+            <element signature="method#addPerms#0;class#Role#0" expanded="false" />
+            <element signature="method#removePerms#0;class#Role#0" expanded="false" />
+            <element signature="method#removeAllPerms#0;class#Role#0" expanded="false" />
+            <element signature="method#updatePermissions#0;class#Role#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/json/JSONConstants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7890819">
+          <caret line="114" column="75" selection-start-line="114" selection-start-column="75" selection-end-line="114" selection-end-column="75" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/base/iam/Resource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+          <folding>
+            <element signature="e#3989#3990#0" expanded="true" />
+            <element signature="e#4031#4032#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/base/model/AuthorizationModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="45" column="74" selection-start-line="45" selection-start-column="74" selection-end-line="45" selection-end-column="74" />
+          <folding>
+            <element signature="e#1160#1161#0" expanded="true" />
+            <element signature="e#1228#1229#0" expanded="true" />
+            <element signature="e#1272#1273#0" expanded="true" />
+            <element signature="e#1317#1318#0" expanded="true" />
+            <element signature="e#1368#1369#0" expanded="true" />
+            <element signature="e#1450#1451#0" expanded="true" />
+            <element signature="method#getUsersPermissions#0;class#AuthorizationModel#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/core/Server.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="31" column="52" selection-start-line="31" selection-start-column="52" selection-end-line="31" selection-end-column="52" />
+          <caret line="155" column="39" selection-start-line="155" selection-start-column="39" selection-end-line="155" selection-end-column="39" />
           <folding>
             <element signature="method#wrongCredentials#0;class#Server#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/run/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/com/company/core/Client.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33746898">
-          <caret line="9" column="15" selection-start-line="9" selection-start-column="15" selection-end-line="9" selection-end-column="15" />
-          <folding />
+        <state vertical-scroll-proportion="0.7890819">
+          <caret line="394" column="62" selection-start-line="394" selection-start-column="62" selection-end-line="394" selection-end-column="62" />
+          <folding>
+            <element signature="method#Client#0;class#Client#0" expanded="false" />
+            <element signature="method#close#0;class#Client#0" expanded="false" />
+            <element signature="method#parseModelFromString#0;class#Client#0" expanded="false" />
+            <element signature="method#saidBadToken#0;class#Client#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

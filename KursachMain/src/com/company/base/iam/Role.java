@@ -140,6 +140,13 @@ public class Role {
         return false;
     }
 
+    public boolean isResourceGranted(Resource resource) {
+        for (Map.Entry<Resource, List<Permission>> map : permsForResource.entrySet())
+            if (map.getKey().equals(resource))
+                return true;
+        return false;
+    }
+
     public String getResourcePermission() {
         String out = "";
         for (Map.Entry<Resource, List<Permission>> entry : permsForResource.entrySet()) {

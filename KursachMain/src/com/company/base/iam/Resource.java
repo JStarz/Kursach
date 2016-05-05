@@ -8,6 +8,8 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.PrintWriter;
 import java.net.Socket;
+import java.util.Arrays;
+import java.util.List;
 
 public class Resource {
 
@@ -73,6 +75,34 @@ public class Resource {
             }
         }
         return false;
+    }
+
+    public List<String> getResourcePath() {
+        String path = null, name = null;
+        try {
+            toResourceServer = new Socket("localhost", 9002);
+            inStream = new BufferedReader(new InputStreamReader(toResourceServer.getInputStream()));
+            outStream = new PrintWriter(toResourceServer.getOutputStream(), true);
+
+            final JSON request = new JSON();
+            request.addTypeContent(JSONConstants.GetResourcePath);
+            request.addBodyContent(JSONConstants.Resource, resource);
+            outStream.println(request.getStringRepresentation());
+
+            path = inStream.readLine();
+            name = inStream.readLine();
+        } catch (Exception e) {
+            System.out.println("Unable connect to resource server!");
+        } finally {
+            try {
+                inStream.close();
+                outStream.close();
+                toResourceServer.close();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+        return Arrays.asList(path, name);
     }
 
     @Override

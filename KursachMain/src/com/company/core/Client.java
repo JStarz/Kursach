@@ -377,4 +377,23 @@ public class Client extends ClientModel {
 
         outStream.println(json.getStringRepresentation());
     }
+
+    public void resourcePath(String resourcePath, String resourceName) {
+        final JSON json = new JSON();
+
+        json.addTypeContent(JSONConstants.GetResourcePathResult);
+        json.addBodyContent(JSONConstants.Value, resourcePath);
+        json.addBodyContent(JSONConstants.Name, resourceName);
+
+        outStream.println(json.getStringRepresentation());
+    }
+
+    public void resourceDownloaded(String fileContent) {
+        final JSON json = new JSON();
+
+        json.addTypeContent(JSONConstants.StartDownloadResult);
+        json.addBodyContent(JSONConstants.Value, fileContent);
+
+        outStream.println(json.getStringRepresentation());
+    }
 }

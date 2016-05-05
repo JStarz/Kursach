@@ -142,6 +142,20 @@ public class Server implements KerberosResponses, ClientRequests {
                     client.sendResource(resource);
                     break;
 
+                case JSONConstants.GetResourcePath:
+                    final List<String> resourcePath = model.getResourcePath(
+                            json.getValueForKey(JSONConstants.Resource)
+                    );
+                    client.resourcePath(resourcePath.get(0), resourcePath.get(1));
+                    break;
+
+                case JSONConstants.StartDownload:
+                    final String fileContent = model.downloadFile(
+                            json.getValueForKey(JSONConstants.Resource)
+                    );
+                    client.resourceDownloaded(fileContent);
+                    break;
+
                 case JSONConstants.SetResource:
                     final boolean isSet = model.setResource(
                             json.getValueForKey(JSONConstants.Resource),

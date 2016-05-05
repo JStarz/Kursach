@@ -21,6 +21,7 @@ public class Connection {
     private String token;
 
     public ServerAuthResponseDelegate authResponse;
+    public DownloadFileDelegate downloadResponse;
     public UserCommandResponseDelegate commandResponse;
 
     public Connection(Socket clientSocket) throws IOException {
@@ -185,6 +186,78 @@ public class Connection {
                 }
             }
         }.start();
+    }
+
+    public void startDownload(String resource) {
+        new Thread() {
+            @Override
+            public void run() {
+                super.run();
+
+                baseSleep(50);
+
+                final JSON startDownload = new JSON();
+                startDownload.addBodyContent(JSONConstants.Token, token);
+                startDownload.addBodyContent(JSONConstants.Resource, resource);
+                startDownload.addTypeContent(JSONConstants.StartDownload);
+
+                outStream.println(startDownload.getStringRepresentation());
+
+                try {
+                    final JSON startDownloadResponse = new JSON(inStream.readLine());
+                    if (startDownloadResponse.getTypeValue().equals(JSONConstants.StartDownloadResult)) {
+                        if (downloadResponse != null) {
+                            final String file = startDownloadResponse.getValueForKey(JSONConstants.Value);
+                            Platform.runLater(() -> downloadResponse.receiveFile(resource, file));
+                        }
+                    }
+                } catch (IOException e) {
+                    Platform.runLater(() -> authResponse.connectionClose(e.getMessage()));
+                } catch (Exception e) {
+                    Platform.runLater(() -> authResponse.connectionClose("Bad server authResponse!"));
+                }
+            }
+        }.start();
+    }
+
+    public void stopDownload(String resource) {
+        // TODO: implement
+    }
+
+    public void getResourcePath(String resource) {
+        synchronized (resource) {
+            new Thread() {
+                @Override
+                public void run() {
+                    super.run();
+
+                    baseSleep(50);
+
+                    final JSON getResourcePath = new JSON();
+                    getResourcePath.addBodyContent(JSONConstants.Token, token);
+                    getResourcePath.addBodyContent(JSONConstants.Resource, resource);
+                    getResourcePath.addTypeContent(JSONConstants.GetResourcePath);
+
+                    outStream.println(getResourcePath.getStringRepresentation());
+
+                    try {
+                        final JSON getPathResponse = new JSON(inStream.readLine());
+
+                        if (getPathResponse.getTypeValue().equals(JSONConstants.GetResourcePathResult)) {
+                            if (commandResponse != null) {
+                                final String pathValue = getPathResponse.getValueForKey(JSONConstants.Value);
+                                final String nameValue = getPathResponse.getValueForKey(JSONConstants.Name);
+                                Platform.runLater(() -> commandResponse.resourcePath(resource, pathValue, nameValue));
+                            }
+                        }
+                    } catch (IOException e) {
+                        Platform.runLater(() -> authResponse.connectionClose(e.getMessage()));
+                    } catch (Exception e) {
+                        Platform.runLater(() -> authResponse.connectionClose("Bad server authResponse!"));
+                    }
+                }
+            }.start();
+        }
     }
 
     private void baseSleep(int millis) {

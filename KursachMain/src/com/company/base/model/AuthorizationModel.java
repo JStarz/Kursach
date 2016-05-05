@@ -34,8 +34,16 @@ public class AuthorizationModel {
         return roles.setResource(new Resource(resourceName), new Permission(rule), newValue);
     }
 
+    public List<String> getResourcePath(String resource) {
+        return roles.getResourcePath(new Resource(resource));
+    }
+
     public List<String> getPermissions() {
         return roles.getPermissions();
+    }
+
+    public String downloadFile(String resource) {
+        return new Resource(resource).getResourceValueFromResourceServer();
     }
 
     public List<String> getUsers() throws UserNotAdminException {
